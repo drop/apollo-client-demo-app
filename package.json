@@ -1,0 +1,25 @@
+{
+    "name": "demo-app",
+    "version": "1.0.0",
+    "description": "Project architecture demo",
+    "main": "index.ts",
+    "scripts": {
+        "dev": "parcel serve index.html --port 3001 --target browser",
+        "dev-ramdisk": "parcel serve *.html --port 3001 --target browser --cache-dir /mnt/ramdisk/parcel/cache --out-dir /mnt/ramdisk/parcel/build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.26.3",
+        "typescript": "^3.8.3"
+    },
+    "dependencies": {
+        "@apollo/react-hooks": "^3.1.3",
+        "apollo-boost": "^0.4.7",
+        "graphql": "^14.6.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    }
+}
